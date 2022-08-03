@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Square+Peg&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    width: 300px;
+}
+
+button::before {
+    content: 'Pasa por encima';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: green;
+}
+
+button:hover::before {
+    content: 'Hecho!';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+
+
+
