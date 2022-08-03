@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+.encabezado {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2rem;
+}
+
+#elemento-1 {
+    color: red;
+}
+
+ul #elemento-1 {
+    font-size: 2rem;
+}
