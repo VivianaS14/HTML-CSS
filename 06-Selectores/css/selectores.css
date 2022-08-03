@@ -3,9 +3,14 @@
 }
 
 body section.main .contenedor p {
-    color: green;
+    color: darkred;
+    font-weight: bold;
 }
 
 .contenedor #boton-contenedor {
     background-color: yellow;
+}
+
+#boton-contenedor {
+    background-color: blueviolet;
 }
