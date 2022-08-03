@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Square+Peg&display=swap');
+
+h1 {
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 220px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.img-galeria {
+    width: 300px;
+    opacity: 0.7;
+}
+
+.img-galeria:hover {
+    opacity: 1;
+}
