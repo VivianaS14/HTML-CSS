@@ -6,10 +6,11 @@
     margin-bottom: 10px;
 }
 
+/* acceder a selectores mediante los atributos */
 .input[type="password"] {
     color: red;
 }
-
+/******************************/
 .input-moderno {
     border: none;
     border-bottom: 1px solid #c2c2c2;
@@ -25,7 +26,7 @@
 .input-moderno:focus {
     border-bottom: 1px solid #5f5f5f;
 }
-
+/*************************/
 .input-background {
     background-color: aquamarine;
     border: none;
@@ -39,7 +40,7 @@
 .input-background::placeholder {
     color: #ccc;
 }
-
+/****************************/
 .input-search {
     padding: 10px;
     padding-left: 30px;
