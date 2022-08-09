@@ -3,14 +3,14 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
-
+/*****************************/
 .container {
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; /* espacio entre boxes */
     width: 450px;
 }
 
@@ -67,7 +67,7 @@
 .twitter-btn:hover {
     background-color: #ddd;
 }
-
+/*****************************************/
 .separator {
     display: flex;
     width: 100%;
@@ -75,7 +75,7 @@
 }
 
 .separator hr {
-    flex-grow: 1;
+    flex-grow: 1;  /* se expanden a su maximo como puedan */
     border: none;
     border-top: 1px solid #ccc;
 }
@@ -83,7 +83,7 @@
 .separator span {
     color: #8b8b8b;
 }
-
+/****************************************************/
 .section-inputs {
     display: flex;
     gap: 10px;
@@ -107,7 +107,7 @@ label span {
     font-weight: 700;
 }
 
-.section-inputs label input {
+.section-inputs label input {   /* solamente los label del contenedor */
     width: 80%;
     background-color: #f3f3f4;
     border: none;
@@ -116,7 +116,8 @@ label span {
     outline: none;
     font-size: 14pt;
 }
-label input {
+
+label input {   /* todos los label input */
     width: 90%;
     background-color: #f3f3f4;
     border: none;
@@ -137,7 +138,7 @@ label input:focus {
     border: solid 1px #f3f3f4;
     box-shadow: 0 0 4px #eb50ff4f;
 }
-
+/**********************************************/
 .checkbox-label {
     display: flex;
     flex-direction: row;
