@@ -1,13 +1,13 @@
 .contenedor {
     display: grid;
     gap: 0.5rem;
-    /* column-gap: 0.1rem; */
-    /* row-gap: 1rem; */
-    /* grid-template-columns: auto auto auto; */
-    /* grid-template-columns: repeat(3, auto); */
-    /* grid-template-columns: 20px 3rem 25vw; */
-    grid-template-columns: 1fr 1fr 3fr;
-    grid-template-rows: 200px 5rem 100px;
+    /* column-gap: 0.1rem; */  /* gap por columnas */
+    /* row-gap: 1rem; */  /* gap por filas */
+    /* grid-template-columns: auto auto auto; */  /* 3 columnas de tamaño auto */
+    /* grid-template-columns: repeat(3, auto); */   /* por repeticion  */
+    /* grid-template-columns: 20px 3rem 25vw; */   /* por valores */
+    grid-template-columns: 1fr 1fr 3fr;   /* por fracciones */
+    grid-template-rows: 200px 5rem 100px;   /* template de las filas podemos usar los mismos valores de las columns*/
     /* grid-template-areas: 'head head head' 'main main aside' 'footer footer footer'; */
 }
 
@@ -28,4 +28,5 @@
     /* grid-area: footer; */
     grid-area: 2 / 1 / 4 / 3;
     /* grid-area: filainicio / colinicio / filafin / colfin */
+    /* gird-area: fila / columna (empienza) / fila / columna (termina)*/
 }

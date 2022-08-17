@@ -15,17 +15,17 @@ body {
     width: 50%;
 }
 
-.px {
+.px {  /* mismo tamaño sin importar su contenedor */
     background-color: green;
     width: 200px;
 }
 
-.porcentaje {
+.porcentaje {  /* porcentaje en relacion a su contenedor padre */
     background-color: red;
     width: 50%;
 }
 
-.view {
+.view { /* tamaño o ancho de la pantalla */
     background-color: yellow;
     width: 50vw;
 }

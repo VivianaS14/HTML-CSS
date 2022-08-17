@@ -4,17 +4,17 @@
     background-color: yellow;
     padding: 0.5rem;
     display: flex;
-    gap: 0.5rem;
-    min-height: 5rem;
-    /* Eje principal */
+    gap: 0.5rem; /* items separados entre si */
+    min-height: 5rem;  /* altura minima */
+    /* Eje principal */  /* utiliza la propiedad justify */
     justify-content: space-around;
 
-    /* Eje secundario */
+    /* Eje secundario */  /* utiliza la propiedad align-items */
     align-items: center;
 
     /* flex-direction: column; */
 
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /* envuelve y acomoda los elementos para mantener su tamaño */
 }
 
 .item {
@@ -24,5 +24,5 @@
 }
 
 .item2 {
-    align-self: stretch;
+    align-self: stretch; 
 }

@@ -1,9 +1,12 @@
+/* pesudo clase root donde se definen las variable */
 :root {
+    /* definicion de variables */
     --color-principal: rgb(195, 0, 255);
     --ancho-principal: 350px;
 }
 
 .titulo {
+    /* utilizar la variable */
     color: var(--color-principal);
 }
 
