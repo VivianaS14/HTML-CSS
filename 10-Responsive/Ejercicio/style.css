@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;800&family=Mouse+Memoirs&family=Square+Peg&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-general: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+    font-family: var(--font-general);
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+}
+
+.menu {
+    background-color: antiquewhite;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.menu ul {
+    padding: 1rem;
+    gap: 10px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.principal {
+    flex-grow: 8;
+    padding: 20px;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-flow: column-reverse;
+    }
+
+    ul {
+        display: flex;
+        padding: 1rem;
+        gap: 10px;
+    }
+}
+
+  
