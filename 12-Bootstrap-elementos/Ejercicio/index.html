@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Jumbotron and Modal -->
+    <div class="container py-3">
+        <div class="bg-dark p-5 rounded-3">
+            <div class="container-fluid py-4 text-bg-dark">
+                <h1 class="pb-4">Custom jumbotron</h1>
+                <p class="fs-5 col-md-8">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <button 
+                    type="button"
+                    class="mt-4 btn btn-lg btn-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-window"
+                >
+                    Example Button
+                </button>
+                <div 
+                    class="modal fade"
+                    id="modal-window"
+                    data-bs-backdrop="static"
+                >
+                    <div class="modal-dialog text-bg-light rounded-3">
+                        <div class="modal-content">
+                            <h4 class="modal-header">Hello!</h4>
+                            <div class="modal-body">
+                                <p>It is a plesure to meet you again!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button 
+                                    class="btn btn-outline-dark"
+                                    data-bs-dismiss="modal"
+                                >Aceptar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <div class="container pt-5">
+        <form action="">
+            <div class="mb-5">
+                <h2 class="mb-4 text-center">Please completed this form with your opinion</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Your name here...">
+                            <label for="floatingInput">Full Name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="floatingPhoneNumber" placeholder="Phone Number">
+                            <label for="floatingPhoneNumber">Phone Number</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mt-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Messege</label>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button 
+                        type="submit" 
+                        class="btn btn-dark mt-3 fs-5"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Card -->
+    <div class="container pt-5 pb-5 d-grid gap-2 col-4 mx-auto">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <i class="bi bi-person-fill display-1"></i>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body py-4">
+                  <h5 class="card-title mb-3">Viviana Andrea</h5>
+                  <p class="card-text">I am student of software engeniering and also I am stunding to be a full stack web-developer, to achive one of my dreams to be developer.</p>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <p class="card-text"><small>Email: vasorianp@gmail.com</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    /* Modal */
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+</script>
+ 
+</html>
