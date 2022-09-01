@@ -39,15 +39,18 @@
         </div>
         <div class="mb-3">
           <label class="form-label" for="apellido">Introduce tu apellido</label>
+          <!-- value es para un valor prederteminado -->
+          <!-- form-control-plaintext para caja sin lineas, nos quita todas las lineas de afuera -->
           <input
             id="apellido"
             type="text"
             class="form-control-plaintext"
             placeholder="Tu apellido"
-            value="Villar"
+            value="Deleted this!"
           />
           <div class="form-text">Introduce tu apellido</div>
         </div>
+        <!-- adjuntar archivo -->
         <div class="mb-3">
           <label for="formFile" class="form-label">Por defecto</label>
           <input class="form-control" type="file" id="formFile" />
@@ -63,7 +66,7 @@
             aria-describedby="emailHelp"
             value="gorka@gorka.com"
             readonly
-          />
+          /> <!-- readonly solo lectura -->
           <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
           </div>
@@ -82,9 +85,12 @@
             >Check me out</label
           >
         </div>
+        <!-- color picker -->
         <div class="mb-3">
-          <input type="color" class="form-control form-control-color" />
+          <label for="exampleColorInput" class="form-label">Color picker</label>
+          <input type="color" class="form-control form-control-color" id="exampleColorInput" />
         </div>
+        <!-- data list -->
         <div class="mb-3">
           <label for="exampleDataList" class="form-label"
             >Selecciona tu ciudad</label

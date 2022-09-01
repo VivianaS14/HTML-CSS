@@ -13,15 +13,24 @@
     />
   </head>
   <body>
-    <div class="container">
+    <!-- badgets van dentro de span y son elementos de apoyo -->
+    <div class="container py-5">
       <h2>Este es el título <span class="badge bg-secondary">Nuevo!</span></h2>
+      <!-- d-block -> display block -->
       <div class="row d-block px-4">
+        <!-- w = width auto -->
         <button class="btn btn-primary w-auto">
-          Notificaciones <span class="badge bg-secondary">5</span>
+          Notificaciones <span class="badge bg-warning">5</span>
         </button>
       </div>
-      <button class="mt-4 btn btn-primary position-relative">Emails <span class="badge position-absolute bg-danger top-0 start-100 translate-middle rounded-pill">99+</span></button>
-      <button class="mt-4 btn btn-primary position-relative">Notificaciones <span class="badge position-absolute bg-danger top-0 start-100 translate-middle rounded-pill p-2"><span class="visually-hidden">99+</span></span></button>
+      <!-- margin, btn, position relative -->
+      <button class="mt-4 btn btn-primary position-relative">Emails 
+        <!-- position absolute / top-0 start-100 para que quede mas arribita / rounder-pill para redondear -->
+        <span class="badge position-absolute bg-danger top-0 start-100 translate-middle rounded-pill">99+</span>
+      </button>
+      <button class="mt-4 btn btn-primary position-relative">Notificaciones 
+        <span class="badge position-absolute bg-danger top-0 start-100 translate-middle rounded-pill p-2"><span class="visually-hidden">99+</span></span>
+      </button>
 
       <span class="badge bg-success">Éxito</span>
       <span class="badge bg-danger">Error</span>

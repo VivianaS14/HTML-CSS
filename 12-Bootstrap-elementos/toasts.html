@@ -13,10 +13,13 @@
     />
   </head>
   <body>
+    <!-- Notifications -->
     <div class="container py-4">
       <button class="btn btn-primary" id="boton-trigger">
         Muestra el toast
       </button>
+      <!-- here there are a toasts -->
+      <!-- un div con clase toasts y debe contener un header y un body -->
       <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div
           id="liveToast"
@@ -42,7 +45,8 @@
       <div
         class="toast-container d-flex align-items-center justify-content-center"
       >
-        <div class="toast show">
+      <!-- toasts estan ocultos por defecto, para que se muestre show -->
+        <div class="toast show bg-success">
           <div class="toast-header">Título del primer toast</div>
           <div class="toast-body">Mensaje</div>
         </div>
@@ -59,6 +63,7 @@
     crossorigin="anonymous"
   ></script>
   <script>
+    /* this must be inicialaize with js*/
     var toastTrigger = document.getElementById("boton-trigger");
     var toastLiveExample = document.getElementById("liveToast");
     if (toastTrigger) {

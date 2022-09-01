@@ -34,6 +34,7 @@
             <option value="2">Dos</option>
             <option value="3">Tres</option>
           </select>
+          <!-- multiple aparecen todas las opciones en la caja, size controla de cuantas opciones mostrar -->
           <select multiple class="form-select mb-3" size="2">
             <option selected>Elige un número</option>
             <option value="1">Uno</option>
@@ -41,6 +42,7 @@
             <option value="3">Tres</option>
           </select>
         </div>
+        <!-- checkbox: disable and checked -->
         <div>
           <input
             type="checkbox"
@@ -53,6 +55,18 @@
             >Estoy de acuerdo con las condiciones</label
           >
         </div>
+        <div class="mt-2">
+          <input
+          type="checkbox"
+          class="form-check-input"
+          id="check"
+          checked
+          />
+          <label for="check" class="form-check-label"
+          >Soy mayor de edad</label
+          >
+        </div>
+        <!-- radio bottons -->
         <div class="mt-4">
           <div class="form-check form-check-inline">
             <input
@@ -67,6 +81,7 @@
               >Soy menor de edad</label
             >
           </div>
+          <!-- disabled -->
           <div class="form-check form-check-inline">
             <input
               class="form-check-input"
@@ -84,12 +99,14 @@
         <div class="row mt-4">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <!-- switches -->
         <div class="form-check form-switch mt-4">
           <input type="checkbox" class="form-check-input" id="switch" checked />
           <label for="switch" class="form-check-label"
             >Estoy de acuerdo con las condiciones</label
           >
         </div>
+        <!-- input de tipo radio pero con clase de btn -->
         <div class="mt-4">
           <input
             type="radio"

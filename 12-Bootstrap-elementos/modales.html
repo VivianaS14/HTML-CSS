@@ -14,6 +14,8 @@
   </head>
   <body>
     <div class="container py-4">
+      <!-- data-bs-toggle = esta diciendo que el boton afecta a un modal -->
+      <!-- data-bs-target = esta diciendo que afecta al modal con id #... -->
       <button
         type="button"
         class="btn btn-primary"
@@ -22,13 +24,20 @@
       >
         Lanzar modal de demostración
       </button>
+      <!-- modal / fade es la animacion / backdrop static no se cierra a menos que sea click en el boton -->
       <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+        <!-- cuerpo del modal /  modal-dialog-centered centra el modal-->
         <div class="modal-dialog modal-dialog-centered">
+          <!-- contenido -->
           <div class="modal-content">
+            <!-- header -->
             <h4 class="modal-header">Este es el header</h4>
+            <!-- body -->
             <div class="modal-body">
               <p>Este es el body</p>
               <hr />
+              <!-- popove cuando hace click aparece un texto -->
+              <!-- toggle permite usar el script js  -->
               <p>
                 This
                 <a
@@ -43,8 +52,10 @@
                 triggers a popover on click.
               </p>
               <hr />
+              <!-- tooltip -->
               <p>
                 Este es un
+                <!-- placement es la ubicacion donde aparece el tooltip -->
                 <a
                   href="#"
                   data-bs-toggle="tooltip"
@@ -54,7 +65,9 @@
                 >
               </p>
             </div>
+            <!-- footer -->
             <div class="modal-footer">
+              <!-- dismiss = js actua sobre los elementos de pantalla -->
               <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
                 Cerrar
               </button>
@@ -71,12 +84,14 @@
     crossorigin="anonymous"
   ></script>
   <script>
+    /* popover and tooltips must be inicializate here */
     var popoverTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="popover"]')
     );
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl);
     });
+    /* tooltip script */
     var tooltipTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="tooltip"]')
     );

@@ -14,24 +14,33 @@
   </head>
   <body>
     <div class="container py-4">
+      <!-- role es mas para saber el estado que se identifica con el span -->
       <div class="spinner-border text-info" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="spinner-border text-primary"></div>
+      <!-- margen en x de 2   margen en y de 5 -->
       <div class="spinner-grow text-warning mx-2 my-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
+      <!-- tamaño sm mas pequeño -->
       <div class="spinner-border text-danger spinner-border-sm"></div>
       <div class="spinner-grow text-danger spinner-grow-sm"></div>
+      <!-- tambien se puede cambiar tamaño con width and height -->
       <div
         class="spinner-border text-secondary"
         style="width: 3rem; height: 3rem"
       ></div>
-
-      <button class="btn btn-primary disabled">
-          <div class="spinner-grow spinner-grow-sm"></div>
+      <!-- dentro de botones -->
+      <!-- diasabled para no acceder al boton -->
+      <button class="btn btn-warning disabled">
+          <div class="spinner-border spinner-border-sm"></div>
           Cargando...
       </button>
+      <button class="btn btn-primary disabled">
+        <div class="spinner-grow spinner-grow-sm"></div>
+        Cargando...
+    </button>
     </div>
   </body>
   <script
